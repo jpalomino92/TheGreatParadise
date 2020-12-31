@@ -1,0 +1,38 @@
+.titulos{
+    color : #002699;
+}
+
+.logo{
+    width:60px;
+    height:60px;
+
+}
+.principal{
+    color:#6666ff
+}
+
+.costado{
+    color: red
+}
+
+table tr td ol li{
+    color:red
+}
+
+footer ul img{
+    height: 30px;
+    width: 30px;
+}
+.listNoMark{
+    list-style-type: none;
+}
+header{
+    background-color: #36424f;
+}
+header ul li a{
+    color: white;
+    text-decoration: none;
+}
+footer {
+    background-color: #d8d8d8;
+}
