@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+/*Index's CSS*/
 header{
     background-color: #36424f;
     width: 100%;
@@ -67,6 +68,24 @@ header ul li a{
     font-size: 1.4rem;
     font-weight: bold;
 }
+.gridContainerPictures{
+    display: grid;
+    grid-template-columns: 300px 385px;
+    grid-template-rows: 450px;
+    grid-column-gap: 20%;
+    justify-content: center;
+    align-items: center;
+}
+.gridPicturesBull{
+    width:300px;
+    height:380px;
+}
+.gridPicturesChow{
+
+    width:385px;
+    height:320px;
+}
+
 footer{
     display: flex;
     margin-top: 4rem;
@@ -98,6 +117,7 @@ p{
     font-family: 'Montserrat', sans-serif;
     font-size:  1.2em;
 }
+/* nosotros's CSS */
 .titulos{
     color : #002699;
 }
@@ -108,6 +128,10 @@ p{
 }
 
 
+.Me{
+    width:300px;
+    height:380px;
+}
 
 
 
