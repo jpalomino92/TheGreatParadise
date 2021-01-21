@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+
 }
 /*Index's CSS*/
 header{
@@ -94,7 +95,7 @@ footer{
     background-color: #d8d8d8;
 }
 .pie{
-    margin-left: 35%;
+    margin-left: 30%;
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -118,20 +119,47 @@ p{
     font-size:  1.2em;
 }
 /* nosotros's CSS */
+
 .titulos{
-    color : #002699;
+    font-family: 'Montserrat', sans-serif;
+    color: #36424f;
 }
 
 .principal{
     margin-top: 2rem;
-    color:#6666ff
+    display:grid;
+    grid-template-columns: 600px;
+    grid-template-rows: 50px 150px 380px;
+    grid-row-gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
+.principalTitulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+}
+.principalParragraph{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+
+
+}
+.principalImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.principalImage img{
+    border-radius: 100%;
+}
 
 .Me{
-    width:300px;
-    height:380px;
+    width:230px;
+    height:300px;
 }
-
 
 
