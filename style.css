@@ -107,12 +107,23 @@ header ul li a{
 .gridPicturesBull{
     width:300px;
     height:380px;
+    transition: transform .8s;
+
+}
+.gridPicturesBull:hover{
+    transform: scale(1.2)
+
 }
 .gridPicturesChow{
-
     width:385px;
     height:320px;
+    transition: transform .8s;
 }
+.gridPicturesChow:hover{
+    transform: scale(1.2)
+
+}
+
 
 footer{
     display: flex;
@@ -208,6 +219,7 @@ p{
     grid-template-columns: 300px 300px;
     grid-template-rows: auto;
     grid-row-gap: 20px;
+    grid-template-areas: ;
     justify-content: center;
     align-items: center;
 }
