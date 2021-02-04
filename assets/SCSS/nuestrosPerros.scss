@@ -1,0 +1,25 @@
+
+.imageTall{
+    width:300px;
+    height:380px;
+}
+
+.imageWide{
+    width:385px;
+    height:320px;
+
+}
+
+.breedsFemale{
+    margin-top: 2rem;
+    display:grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: auto;
+    grid-row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.flexCarousel{
+    display: flex;
+    justify-content: center
+}

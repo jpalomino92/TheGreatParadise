@@ -1,0 +1,35 @@
+footer{
+    display: flex;
+    margin-top: 4rem;
+    height: 250px;
+    width: 100%;
+    background-color: #d8d8d8;
+    div{
+        div{
+            a{
+                margin: 1rem;
+
+            }
+        }
+    }
+}
+.pie{
+    margin-left: 30%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.logoFooter{
+    width:60px;
+    height:60px;
+    
+}
+.socialMedia{
+    height: 30px;
+    width: 30px;
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-size:  1.2em;
+}

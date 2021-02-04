@@ -1,0 +1,40 @@
+
+
+.titulos{
+    font-family: 'Montserrat', sans-serif;
+    color: #36424f;
+}
+
+.principal{
+    margin-top: 2rem;
+    display:grid;
+    grid-template-columns: 600px;
+    grid-template-rows: 50px 150px 380px;
+    grid-row-gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.principalTitulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.principalParragraph{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.principalImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        border-radius: 100%;
+    }
+}
+.Me{
+    width:230px;
+    height:300px;
+}
