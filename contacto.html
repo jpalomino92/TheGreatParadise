@@ -42,34 +42,29 @@
         </nav>
     </header>
 
-    <h1 class="titulos tituloRazas">Contacto</h1>
-
-    <form action="contacto.html" method="post">
-        <fieldset>
-            <legend>Solicitar informacion</legend>
-                Nombre: <input type="text" name="nombre">
-                <br>
-                Apellido: <input type="text" name="apellido">
-                <br>
-                Email: <input type="email" name="email">
-                <br>
-                Raza en la cual se encuentra interesado: <select name="dogs">
-                    <option value="Chow Chow">Chow Chow</option>
-                    <option value="Gran Danes">Gran Danes</option>
-                    <option value="Salchicha">Salchicha</option>
-                    <option value="Chihuahua">Chihuahua</option>
-                </select>
-                <br>
-                <br>
-                ¿Desea recibir informacion sobra los cachorros diponibles?<input type="checkbox" name="aceptar">
-                <br>
-                <br>
-                <textarea cols="60" rows="15" ></textarea>
-                <br>
-                <input type="reset" value="Limpiar Formulario">
-                <input type="submit" value="Enviar Formulario">
-        </fieldset>
-    </form>
+    <h1 class="titulos tituloContacto">Contacto</h1>
+    <div class="contact-form">
+        <form action="contacto.html" method="post" id="contact-form">
+            <fieldset>
+                <legend>Solicitar informacion</legend>
+                    <input type="text" name="nombre" placeholder="Nombre" class="form-control" required> 
+                    <br>
+                    <input type="text" name="apellido" placeholder="Apellido" class="form-control" required>
+                    <br>
+                    <input type="Telefono" name="Telefono" placeholder="Telefono" class="form-control" required>
+                    <br>
+                    <input type="email" name="email" placeholder="Email" class="form-control" required>
+                    <br>
+                    <br>
+                    <textarea cols="30" rows="10" class="form-control"></textarea>
+                    <br>
+                    <div class="form__button">
+                        <input type="reset" value="Limpiar Formulario" class="form-control form-button">
+                        <input type="submit" value="Enviar Formulario" class="form-control form-button">
+                    </div>
+            </fieldset>
+        </form>
+    </div>
 
 
     <div id="map"></div>
