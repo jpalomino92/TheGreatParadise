@@ -1,0 +1,20 @@
+.cointainerContacto {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-column-gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+  }
+
+#footerContacto{
+    margin-top: 0;
+
+  }
