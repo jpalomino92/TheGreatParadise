@@ -7,56 +7,30 @@
 .imageWide{
     width:322px;
     height:230px;
-
+}
+.imageWideCarrousel{
+    width:300px;
+    height:380px;
 }
 .tituloNuestrosPerros{
     display: flex;
     justify-content: center;
     margin-top: 2rem;
 }
-
-.cointainer {
-    display: grid;
-    grid-template-columns: 322px 322px;
-    grid-template-rows: auto;
-    grid-column-gap: 15px;
+.mainParragraphContainerNuestrosPerros{
+    display:flex;
     justify-content: center;
+    align-items:center;
+}
+
+.mainParragraphNuestrosPerros{
+    width:50%;
+    height: 25px;
+    margin-bottom: 8rem;
+    margin-top: 5rem;
+}
+.carouselFlex{
+    display: flex;
     align-items: center;
-
-}
-
-.breadsName { 
-    grid-area: 1 / 1 / 2 / 3;
-    display: flex;
-    justify-content: flex-start;
-}
-.breedsHeader {
-    grid-area: 2 / 1 / 3 / 2;
-    display: flex;
-    justify-content: flex-start;
-}
-.breedsImages4 {
-    grid-area: 3 / 1 / 4 / 2;
-    display: flex;
     justify-content: center;
-    align-items: center;
-
 }
-.breedsImages2 {
-    grid-area: 3 / 2 / 4 / 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-.cointainer2 {
-    display: grid;
-    grid-template-columns: 322px 322px;
-    grid-template-rows: auto;
-    grid-column-gap: 15px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-
-}
-

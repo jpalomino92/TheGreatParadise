@@ -1,0 +1,46 @@
+@media screen  and (min-width:300px) and  (max-width: 499.98px) { 
+    .titulos{
+        font-family: 'Montserrat', sans-serif;
+        color: #36424f;
+    }
+    
+    .principal{
+        margin-top: 2rem;
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 150px 380px;
+        grid-row-gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .principalTitulo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .principalParragraph{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .principalParragraph p{
+        width: 90%;
+
+    }
+    .principalImage{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            border-radius: 100%;
+        }
+    }
+    .Me{
+        width:230px;
+        height:300px;
+    }
+}
+
+

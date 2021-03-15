@@ -1,0 +1,56 @@
+@media screen and (min-width:300px) and (max-width: 650.98px) { 
+    .tituloContacto{
+        display: flex;
+        justify-content: center;
+        margin-top: 100px;
+        transition: all 4s ease-in-out;
+    }
+    
+    .contact-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        width: 100%;
+    }
+    form{
+        margin-top: 30px;
+        transition: all 4s ease-in-out;
+    }
+    .form-control{
+        width: 100%;
+        background: transparent;
+        border:none;
+        outline:none;
+        border-bottom: 1px solid gray;
+        color: #36424f;
+        font-size: 18px;
+        margin-bottom:16px;
+    }
+    
+    .form__button{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form .form-button{
+        background: #36424f;
+        border-color: transparent;
+        color:#fff;
+        font-size: 12px;
+        font-weight: bold;
+        letter-spacing:2px;
+        height:50px;
+        margin-top: 20px;
+        width: 60%;
+        padding: 0;
+    }
+    
+
+    #footerContacto{
+        margin-top: 0;
+      }
+
+}
