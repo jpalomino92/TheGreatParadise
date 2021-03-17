@@ -23,6 +23,18 @@
     .mainParragraphNuestrosPerros{
         width:90%;
     }
+    .carouselGrid{
+        display: grid;
+        grid-template-columns: 380px;
+        grid-template-rows: auto;
+        grid-gap:2rem;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+    }
+    .carouselFlex{
+        margin-top: 15px;
+    }
 
 }
 @media screen and (min-width:500px) and (max-width: 575.98px) { 
@@ -48,6 +60,18 @@
     }
     .mainParragraphNuestrosPerros{
         width:90%;
+    }
+    .carouselGrid{
+        display: grid;
+        grid-template-columns: 380px;
+        grid-template-rows: auto;
+        grid-gap:2rem;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+    }
+    .carouselFlex{
+        margin-top: 15px;
     }
 
 }
@@ -75,6 +99,18 @@
     .mainParragraphNuestrosPerros{
         width:90%;
     }
+    .carouselGrid{
+        display: grid;
+        grid-template-columns: 380px;
+        grid-template-rows: auto;
+        grid-gap:2rem;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+    }
+    .carouselFlex{
+        margin-top: 15px;
+    }
 
 }
 @media screen and (min-width:769.98px) and (max-width: 992.98px) { 
@@ -99,6 +135,9 @@
     }
     .mainParragraphNuestrosPerros{
         width:90%;
+    }
+    .carouselFlex{
+        margin-top: 15px;
     }
 
 }
@@ -125,5 +164,7 @@
     .mainParragraphNuestrosPerros{
         width:90%;
     }
+
+
 
 }

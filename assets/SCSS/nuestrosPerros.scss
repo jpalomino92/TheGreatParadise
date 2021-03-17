@@ -34,3 +34,13 @@
     align-items: center;
     justify-content: center;
 }
+
+.carouselGrid{
+    display: grid;
+    grid-template-columns: 380px 380px;
+    grid-template-rows: auto;
+    grid-column-gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}

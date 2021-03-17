@@ -202,6 +202,15 @@ p {
   align-items: center;
   justify-content: center; }
 
+.carouselGrid {
+  display: grid;
+  grid-template-columns: 380px 380px;
+  grid-template-rows: auto;
+  grid-column-gap: 15px;
+  justify-content: center;
+  align-items: center;
+  margin: 30px; }
+
 .tituloContacto {
   display: flex;
   justify-content: center;
@@ -342,12 +351,6 @@ form .form-button {
     height: 380px;
     transition: transform .8s; }
   .Bulldog:hover {
-    transform: scale(1.2); }
-  .Chow {
-    width: 385px;
-    height: 320px;
-    transition: transform .8s; }
-  .Chow:hover {
     transform: scale(1.2); }
   .pie {
     margin: 3%;
@@ -684,7 +687,17 @@ form .form-button {
     margin-bottom: 8rem;
     margin-top: 5rem; }
   .mainParragraphNuestrosPerros {
-    width: 90%; } }
+    width: 90%; }
+  .carouselGrid {
+    display: grid;
+    grid-template-columns: 380px;
+    grid-template-rows: auto;
+    grid-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin: 30px; }
+  .carouselFlex {
+    margin-top: 15px; } }
 
 @media screen and (min-width: 500px) and (max-width: 575.98px) {
   .imageTall {
@@ -703,7 +716,17 @@ form .form-button {
     margin-bottom: 8rem;
     margin-top: 5rem; }
   .mainParragraphNuestrosPerros {
-    width: 90%; } }
+    width: 90%; }
+  .carouselGrid {
+    display: grid;
+    grid-template-columns: 380px;
+    grid-template-rows: auto;
+    grid-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin: 30px; }
+  .carouselFlex {
+    margin-top: 15px; } }
 
 @media screen and (min-width: 576px) and (max-width: 768.98px) {
   .imageTall {
@@ -722,7 +745,17 @@ form .form-button {
     margin-bottom: 8rem;
     margin-top: 5rem; }
   .mainParragraphNuestrosPerros {
-    width: 90%; } }
+    width: 90%; }
+  .carouselGrid {
+    display: grid;
+    grid-template-columns: 380px;
+    grid-template-rows: auto;
+    grid-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin: 30px; }
+  .carouselFlex {
+    margin-top: 15px; } }
 
 @media screen and (min-width: 769.98px) and (max-width: 992.98px) {
   .imageTall {
@@ -741,7 +774,9 @@ form .form-button {
     margin-bottom: 8rem;
     margin-top: 5rem; }
   .mainParragraphNuestrosPerros {
-    width: 90%; } }
+    width: 90%; }
+  .carouselFlex {
+    margin-top: 15px; } }
 
 @media screen and (min-width: 993px) and (max-width: 1200px) {
   .imageTall {
