@@ -6,6 +6,7 @@ const listaProductos = $("#conteinerProducts");
 let productArray = [];
 let pName = "";
 let pPrice = 0;
+let quantity = 0;
 
 
 class Products{
@@ -25,50 +26,42 @@ function obtenerProductos() {
             const fragment = new DocumentFragment();
             data.forEach((producto) => {
                 template.querySelector("img").setAttribute("src", producto.thumbnailUrl);
-                template.querySelector("#nameProduct").innerHTML = producto.title;
-                template.querySelector("#priceProduct").innerHTML = producto.precio;
+                template.querySelector(".nameProduct").innerHTML = producto.title;
+                template.querySelector(".priceProduct").innerHTML = producto.precio;
                 template.querySelector("button").setAttribute("data-id", producto.id);
                 const clone = template.cloneNode(true);
                 fragment.appendChild(clone);
          
             });
             $("#conteinerProducts").append(fragment);
+            catchButtons(data);
           }
+    });
+}
+
+const catchButtons = (data) => {
+    const button = document.querySelectorAll('.buttonAdd');
+ 
+    button.forEach(btn => { 
+        btn.addEventListener('click',function (){
+        quantity = quantity + 1;
+        document.getElementById("cart-items").innerHTML= quantity;/*
+        pName = document.getElementsByClassName('nameProduct');
+        pPrice = document.getElementsByClassName('.priceProduct');
+        productArray.push(new Products(pName.innerHTML,pPrice.innerHTML));
+        localStorage.setItem("products",JSON.stringify(productArray));
+        */
+
+        });
+        btn.addEventListener('click',function () {
+            console.log(btn.dataset.id)
+          });
+
     });
 }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  let quantity = 0
-
-$('#buttonAdd').click( function () {
-    quantity = quantity + 1;
-    document.getElementById("cart-items").innerHTML= quantity;
-    pName = document.getElementById('nameProduct');
-    pPrice = document.getElementById('priceProduct');
-    productArray.push(new Products(pName.innerHTML,pPrice.innerHTML));
-    localStorage.setItem("products",JSON.stringify(productArray));
-
-    
-});
 
 /*
 const buttonClear = document.getElementById('buttonClear');
