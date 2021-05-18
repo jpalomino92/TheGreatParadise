@@ -16,35 +16,26 @@ class Products{
 
 }
 
-const obtenerProductos = async () => {
-    try {
-      const res = await fetch('productos.json');
-      const data = await res.json();
-      pintarTemplate(data);
-      //eventoBotones(data);
-
-
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
-const pintarTemplate = (data) => {
-    const template = document.querySelector("#productsTemplate").content;
-    const fragment = new DocumentFragment();
-    console.log(template)
-    data.forEach((producto) => {
-        template.querySelector("img").setAttribute("src", producto.thumbnailUrl);
-        template.querySelector("#nameProduct").innerHTML = producto.title;
-        template.querySelector("#priceProduct").innerHTML = producto.precio;
-        template.querySelector("button").setAttribute("data-id", producto.id);
-        const clone = template.cloneNode(true);
-        fragment.appendChild(clone);
- 
+function obtenerProductos() {
+    $.ajax({
+        url: "productos.json",
+        method: "GET",
+        success: function pintarTemplate(data)  {
+            const template = document.querySelector("#productsTemplate").content;
+            const fragment = new DocumentFragment();
+            data.forEach((producto) => {
+                template.querySelector("img").setAttribute("src", producto.thumbnailUrl);
+                template.querySelector("#nameProduct").innerHTML = producto.title;
+                template.querySelector("#priceProduct").innerHTML = producto.precio;
+                template.querySelector("button").setAttribute("data-id", producto.id);
+                const clone = template.cloneNode(true);
+                fragment.appendChild(clone);
+         
+            });
+            $("#conteinerProducts").append(fragment);
+          }
     });
-    $("#conteinerProducts").append(fragment);
-  };
-  
+}
 
 
 

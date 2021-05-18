@@ -34,5 +34,41 @@
         "id": 6,
         "title": "bocaditos",
         "thumbnailUrl": "https://picsum.photos/id/50/600"
+    },
+    {
+        "precio": 150,
+        "id": 7,
+        "title": "bocaditos",
+        "thumbnailUrl": "https://picsum.photos/id/50/600"
+    },
+    {
+        "precio": 150,
+        "id": 8,
+        "title": "bocaditos",
+        "thumbnailUrl": "https://picsum.photos/id/50/600"
+    },
+    {
+        "precio": 150,
+        "id": 9,
+        "title": "bocaditos",
+        "thumbnailUrl": "https://picsum.photos/id/50/600"
+    },
+    {
+        "precio": 150,
+        "id": 10,
+        "title": "bocaditos",
+        "thumbnailUrl": "https://picsum.photos/id/50/600"
+    },
+    {
+        "precio": 150,
+        "id": 9,
+        "title": "bocaditos",
+        "thumbnailUrl": "https://picsum.photos/id/50/600"
+    },
+    {
+        "precio": 150,
+        "id": 9,
+        "title": "bocaditos",
+        "thumbnailUrl": "https://picsum.photos/id/50/600"
     }
 ]
