@@ -1,3 +1,8 @@
+document.addEventListener("DOMContentLoaded", (e) => {
+    obtenerProductos();
+  });
+
+const listaProductos = $("#conteinerProducts");
 let productArray = [];
 let pName = "";
 let pPrice = 0;
@@ -11,8 +16,57 @@ class Products{
 
 }
 
+const obtenerProductos = async () => {
+    try {
+      const res = await fetch('productos.json');
+      const data = await res.json();
+      pintarTemplate(data);
+      //eventoBotones(data);
 
-let quantity = 0
+
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+const pintarTemplate = (data) => {
+    const template = document.querySelector("#productsTemplate").content;
+    const fragment = new DocumentFragment();
+    console.log(template)
+    data.forEach((producto) => {
+        template.querySelector("img").setAttribute("src", producto.thumbnailUrl);
+        template.querySelector("#nameProduct").innerHTML = producto.title;
+        template.querySelector("#priceProduct").innerHTML = producto.precio;
+        template.querySelector("button").setAttribute("data-id", producto.id);
+        const clone = template.cloneNode(true);
+        fragment.appendChild(clone);
+ 
+    });
+    $("#conteinerProducts").append(fragment);
+  };
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  let quantity = 0
 
 $('#buttonAdd').click( function () {
     quantity = quantity + 1;
