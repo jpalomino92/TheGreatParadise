@@ -969,3 +969,7 @@ form .form-button {
   letter-spacing: var(--mainSpacing);
   color: var(--primaryColor);
   text-align: center; }
+
+.cartImages {
+  height: 150px;
+  width: 150px; }

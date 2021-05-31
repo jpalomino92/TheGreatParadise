@@ -66,7 +66,7 @@
         <table class="table">
           <thead>
             <tr>
-              <th scope="col">#</th>
+              <th scope="col">Imagen</th>
               <th scope="col">Item</th>
               <th scope="col">Cantidad</th>
               <th scope="col">Acción</th>
@@ -75,14 +75,14 @@
           </thead>
           <tbody id="items"></tbody>
           <tfoot>
-            <tr id="footer">
+            <tr id="footer-carrito">
               <th scope="row" colspan="5">Carrito vacío!</th>
             </tr>
           </tfoot>
         </table>
-        <h4>Cards</h4>
         <div class="row" id="cards"></div>
       </div>
+
       <template id="template-footer">
         <th scope="row" colspan="2">Total productos</th>
         <td>10</td>
@@ -97,7 +97,8 @@
     
     <template id="template-carrito">
       <tr>
-        <th scope="row">id</th>
+        <th scope="row"> <img src="" alt="" class="cartImages"></th>
+        
         <td>Café</td>
         <td>1</td>
         <td>
@@ -110,18 +111,6 @@
         </td>
         <td>$ <span>500</span></td>
       </tr>
-    </template>
-
-    <template id="template-card">
-      <div class="col-12 mb-2">
-        <div class="card">
-          <div class="card-body">
-            <h5>Titulo</h5>
-            <p>precio</p>
-            <button class="btn btn-dark">Comprar</button>
-          </div>
-        </div>
-      </div>
     </template>
 
 
